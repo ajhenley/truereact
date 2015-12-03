@@ -1,2 +1,10 @@
 <%# add navigation links to this file %>
 <li><%= link_to 'About', page_path('about') %></li>
+      <% if user_signed_in? %>
+        <li><i class="fa fa-sign-out"></i></li>
+        <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
+      <% else %>
+				<li><i class="fa fa-sign-in"></i></li>
+        <li><%= link_to "Login", new_user_session_path %></li>
+      
+      <% end %>

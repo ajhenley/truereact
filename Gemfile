@@ -16,6 +16,9 @@ gem 'high_voltage'
 gem 'pg'
 gem 'simple_form'
 gem 'therubyracer', :platform=>:ruby
+gem 'devise'
+gem 'smarter_csv'
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]

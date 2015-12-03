@@ -1,0 +1,31 @@
+<%= simple_form_for(@survey) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+     <table class="table table-striped">
+      <tr><th>Course</th><td><%= @survey.subj %> <%= @survey.crsenum %> <%= @survey.sect %> - <%= @survey.coursetitle %> (<%= @survey.credits %>cr) [CRN: <%= @survey.crn %>]</td></tr>
+      <tr><th>Instructor</th><td><%= @survey.instrlast %>, <%= @survey.instrfirst %></td></tr>
+    </table>  
+    
+    <% myq1 = f.object.q1 %>
+    <%= render 'partials/question', { :question => @survey.q2, :num => "q1" } %>
+    <%= render 'partials/question', { :question => @survey.q2, :num => "q2" } %>
+    <%= render 'partials/question', { :question => @survey.q3, :num => "q3" } %>
+    <%= render 'partials/question', { :question => @survey.q4, :num => "q4" } %>
+    <%= render 'partials/question', { :question => @survey.q5, :num => "q5" } %>
+    <%= render 'partials/question', { :question => @survey.q6, :num => "q6" } %>
+    <%= render 'partials/question', { :question => @survey.q7, :num => "q7" } %>
+    <%= render 'partials/question', { :question => @survey.q8, :num => "q8" } %>
+    <%= render 'partials/question', { :question => @survey.q9, :num => "q9" } %>
+    <%= render 'partials/question', { :question => @survey.q10, :num => "q10" } %>
+    <%= render 'partials/question', { :question => @survey.q11, :num => "q11" } %>
+    <%= render 'partials/question', { :question => @survey.q12, :num => "q12" } %>
+    <%= render 'partials/question', { :question => @survey.q13, :num => "q13" } %>
+    <%= render 'partials/question', { :question => @survey.q14, :num => "q14" } %>
+    <%= f.hidden_field :isdone, :value => 1 %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, "Save Evaluation", class: "btn btn-primary" %> | <%= link_to 'Cancel', surveys_path, class: "btn btn-warning" %> 
+  </div>
+<% end %>

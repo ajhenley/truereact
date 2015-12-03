@@ -1,0 +1,20 @@
+CRN,DEPT,SUBJ,CRSENUMB,SECT,CREDITS,COURSE_TITLE,INSTRUCTOR_ID,INSTR_LAST_NAME,INSTR_FIRST_NAME,STUDENTID,LASTNAME,FIRSTNAME,MI,GEN,MAJOR,CLS,PREF_EMAIL_ADDR,HOWD_EMAIL_ADDR,SZVRGST_AR_IND
+81430,ACCT,ACCT,201,09,3,Accounting Principles I,@02728988,Bonaparte,Isaac,@02710661,Smith,Nathaniel,,M,SLMC,SO,13nathaniels@abingtonfriends.net,nathaniel.smith@bison.howard.edu,Y
+85748,MGMT,MGMT,001,01,1,Career Counseling in Business,@02522230,House,Cathy,@02733115,Anderson,Michael,X,M,INTB,SO,23michael.anderson@gmail.com,michael.anderson1@bison.howard.edu,Y
+81510,MGMT,MGMT,010,01,1,Business Orientation,@02595219,Schmied,Anita,@02776375,Franklin,Lauren,E,F,MGMT,FR,35300@sjabr.org,lauren.franklin@bison.howard.edu,Y
+81569,CSA,INFO,204,06,3,Mgmt Info Systems,@02007987,Goel,Rajni,@02776375,Franklin,Lauren,E,F,MGMT,FR,35300@sjabr.org,lauren.franklin@bison.howard.edu,Y
+81574,MGMT,MGMT,020,01,1,Fresh. Honors Seminar I,@00068606,Lacy,Gwynette,@02776375,Franklin,Lauren,E,F,MGMT,FR,35300@sjabr.org,lauren.franklin@bison.howard.edu,Y
+86510,CSA,INFO,010,03,2,Business Problem Solving,@02401933,Unger,Darian,@02776375,Franklin,Lauren,E,F,MGMT,FR,35300@sjabr.org,lauren.franklin@bison.howard.edu,Y
+81510,MGMT,MGMT,010,01,1,Business Orientation,@02595219,Schmied,Anita,@02774176,Blanton,Kemiah,G,F,ACCT,FR,8104895@gmail.com,kemiah.blanton@bison.howard.edu,Y
+81569,CSA,INFO,204,06,3,Mgmt Info Systems,@02007987,Goel,Rajni,@02774176,Blanton,Kemiah,G,F,ACCT,FR,8104895@gmail.com,kemiah.blanton@bison.howard.edu,Y
+81574,MGMT,MGMT,020,01,1,Fresh. Honors Seminar I,@00068606,Lacy,Gwynette,@02774176,Blanton,Kemiah,G,F,ACCT,FR,8104895@gmail.com,kemiah.blanton@bison.howard.edu,Y
+86510,CSA,INFO,010,03,2,Business Problem Solving,@02401933,Unger,Darian,@02774176,Blanton,Kemiah,G,F,ACCT,FR,8104895@gmail.com,kemiah.blanton@bison.howard.edu,Y
+81564,CSA,INFO,385,01,3,Introduction to eBusiness,@01128190,Morgan,Allison,@02684710,Deda,Admonish,A,M,INSA,JR,a.dayder@gmail.com,admonish.deda@bison.howard.edu,N
+81572,CSA,INFO,370,01,3,Systems Analysis & Design,@01037715,Owunwanne,Daniel,@02684710,Deda,Admonish,A,M,INSA,JR,a.dayder@gmail.com,admonish.deda@bison.howard.edu,N
+84395,FINB,FINA,311,02,3,Finance Principles,@01105461,Iwarere,Jide,@02684710,Deda,Admonish,A,M,INSA,JR,a.dayder@gmail.com,admonish.deda@bison.howard.edu,N
+84397,CSA,INFO,335,05,3,Prod & Operations Management,@02682648,Tidwell,Angela,@02684710,Deda,Admonish,A,M,INSA,JR,a.dayder@gmail.com,admonish.deda@bison.howard.edu,N
+86315,ACCT,BLAW,305,01,3,Business Law I,@01945127,Bullock,Steven,@02684710,Deda,Admonish,A,M,INSA,JR,a.dayder@gmail.com,admonish.deda@bison.howard.edu,N
+87366,CSA,INFO,375,01,3,Sem Cmptr-Base Mgmt Info Sys,@02803788,Saunders,Aaron,@02684710,Deda,Admonish,A,M,INSA,JR,a.dayder@gmail.com,admonish.deda@bison.howard.edu,N
+81372,FINB,FINA,311,01,3,Finance Principles,@01105461,Iwarere,Jide,@02664829,Johnson,Ashley,A,F,INSA,SR,A.JOHNSON593@YAHOO.COM,ashley.johnson@bison.howard.edu,Y
+81429,ACCT,ACCT,201,08,3,Accounting Principles I,@00249335,Frazier,Dionne ,@02664829,Johnson,Ashley,A,F,INSA,SR,A.JOHNSON593@YAHOO.COM,ashley.johnson@bison.howard.edu,Y
+81449,ACCT,BLAW,305,03,3,Business Law I,@00068809,Paschall,Samuel,@02664829,Johnson,Ashley,A,F,INSA,SR,A.JOHNSON593@YAHOO.COM,ashley.johnson@bison.howard.edu,Y

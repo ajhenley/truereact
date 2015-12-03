@@ -1,0 +1,35 @@
+<% qtype = question.split("~")[0] %>
+<% qtext = question.split("~")[1] %>
+<tr>
+  <th><%= qtext %></th>
+<td>
+  <% if qtype == "L5" %>
+      <% case val %>
+      <% when 2 %>
+      Strongly Agree
+      <% when 1 %>
+      Agree
+      <% when 0 %>
+      Neutral
+      <% when -1 %>
+      Disagree
+      <% when -2 %>
+      Strongly Disagree
+      <% end %>
+  <% elsif qtype=="freetext" %>
+      <%= valtext %>
+  <% elsif qtype == "5to1" %>
+      <% case val %>
+      <% when 5 %>
+      Very Good
+      <% when 4 %>
+      Good
+      <% when 3 %>
+      Satisfactory
+      <% when 2 %>
+      Poor
+      <% when 1 %>
+      Very Poor
+      <% end %>
+  <% end %>
+  </td></tr>

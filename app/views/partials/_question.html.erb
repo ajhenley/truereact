@@ -1,0 +1,27 @@
+<% qtype = question.split("~")[0] %>
+<% qtext = question.split("~")[1] %>
+
+<div class="form-group">
+  <% if qtype == "L5" %>
+      <label for="<%= num %>num"><%= qtext %></label>
+      <select name="FieldName" class='form-control'>
+            <option value='2'>Strongly Agree</option>
+            <option value='1'>Agree</option>
+            <option value='0'>Neutral</option>
+            <option value='-1'>Disagree</option>
+            <option value='-2'>Strongly Disagree</option>
+          </select>
+  <% elsif qtype=="freetext" %>
+      <label for="<%= num %>text"><%= qtext %></label>
+      <textarea name="survey[<%= num %>text]" id="survey_<%= num %>text" class="form-control" rows="3"></textarea>
+  <% elsif qtype == "5to1" %>
+  <label for="<%= num %>num"><%= qtext %></label>
+  <select name="survey[<%= num %>num]" id="survey_<%= num %>num" class='form-control'>
+            <option value='5'>Very Good</option>
+            <option value='4'>Good</option>
+            <option value='3'>Satisfactory</option>
+            <option value='2'>Poor</option>
+            <option value='1'>Very Poor</option>
+          </select>
+  <% end %>
+</div>

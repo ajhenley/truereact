@@ -1,0 +1,24 @@
+<h2>Evaluation Verification</h2>
+<p id="notice"><%= notice %></p>
+
+     <table class="table table-striped">
+      <tr><th class="col-md-6">Course</th><td class="col-md-6"><%= @survey.subj %> <%= @survey.crsenum %> <%= @survey.sect %> - <%= @survey.coursetitle %> (<%= @survey.credits %>cr) [CRN: <%= @survey.crn %>]</td></tr>
+      <tr><th>Instructor</th><td><%= @survey.instrlast %>, <%= @survey.instrfirst %></td></tr>
+ 
+
+<%= render 'partials/response', { :question => @survey.q1, :val => @survey.q1num, :valtext => @survey.q1text } %>
+<%= render 'partials/response', { :question => @survey.q2, :val => @survey.q2num, :valtext => @survey.q2text } %>
+<%= render 'partials/response', { :question => @survey.q3, :val => @survey.q3num, :valtext => @survey.q3text } %>
+<%= render 'partials/response', { :question => @survey.q4, :val => @survey.q4num, :valtext => @survey.q4text } %>
+<%= render 'partials/response', { :question => @survey.q5, :val => @survey.q5num, :valtext => @survey.q5text } %>
+<%= render 'partials/response', { :question => @survey.q6, :val => @survey.q6num, :valtext => @survey.q6text } %>
+<%= render 'partials/response', { :question => @survey.q7, :val => @survey.q7num, :valtext => @survey.q7text } %>
+<%= render 'partials/response', { :question => @survey.q8, :val => @survey.q8num, :valtext => @survey.q8text } %>
+<%= render 'partials/response', { :question => @survey.q9, :val => @survey.q9num, :valtext => @survey.q9text } %>
+<%= render 'partials/response', { :question => @survey.q10, :val => @survey.q10num, :valtext => @survey.q10text } %>
+<%= render 'partials/response', { :question => @survey.q11, :val => @survey.q11num, :valtext => @survey.q11text } %>
+<%= render 'partials/response', { :question => @survey.q12, :val => @survey.q12num, :valtext => @survey.q12text } %>
+<%= render 'partials/response', { :question => @survey.q13, :val => @survey.q13num, :valtext => @survey.q13text } %>
+<%= render 'partials/response', { :question => @survey.q14, :val => @survey.q14num, :valtext => @survey.q14text } %>
+    </table> 
+<%= link_to 'Done', surveys_path, class: "btn btn-success" %>
