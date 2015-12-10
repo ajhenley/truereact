@@ -26,6 +26,16 @@ class SurveysController < ApplicationController
   # GET /surveys/1/edit
   def edit
   end
+  
+  def stats
+    if current_user.role == "admin"
+      @donesurveys = Survey.where(isdone: 1)
+      @notdone = Survey.where(isdone: 0)
+    else
+      redirect_to root_path
+    end
+    
+  end
 
   # POST /surveys
   # POST /surveys.json

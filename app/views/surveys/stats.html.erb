@@ -1,0 +1,8 @@
+<h2>Evaluation Stats</h2>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Completed Surveys</b> - <%= @donesurveys.count %><br />
+  <b>Not Completed Surveys</b> - <%= @notdone.count %><br /><br />
+  <%= ( @donesurveys.count * 100 ) / @notdone.count %> %
+</p>
