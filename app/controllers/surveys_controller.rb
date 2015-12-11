@@ -10,7 +10,7 @@ class SurveysController < ApplicationController
   # GET /surveys
   # GET /surveys.json
   def index
-    @surveys = Survey.where(studentid: current_user.id, isdone: 0 )
+    @surveys = Survey.where(studentid: current_user.id, isdone: 2 )
   end
 
   # GET /surveys/1
@@ -30,7 +30,7 @@ class SurveysController < ApplicationController
   def stats
     if current_user.role == "admin"
       @donesurveys = Survey.where(isdone: 1)
-      @notdone = Survey.where(isdone: 0)
+      @totsurveys = Survey
     else
       redirect_to root_path
     end
