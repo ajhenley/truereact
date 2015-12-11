@@ -4,5 +4,5 @@
 <p>
   <b>Completed Surveys</b> - <%= @donesurveys.count %><br />
   <b>Not Completed Surveys</b> - <%= @notdone.count %><br /><br />
-  <%= ( @donesurveys.count * 100 ) / @notdone.count %> %
+  <%= ( @donesurveys.count * 100 ) / (@notdone.count + @donesurveys.count) %> %
 </p>
