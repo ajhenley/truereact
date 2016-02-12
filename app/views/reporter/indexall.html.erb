@@ -17,7 +17,7 @@
       <tr>
         <td><%= survey.subj %> <%= survey.crsenum %> <%= survey.sect.to_s.rjust(2,"0") %> -- <%= survey.coursetitle %> [<%= survey.crn %>] (<%= survey.credits %>cr)</td>
         <td><%= survey.instrfirst %> <%= survey.instrlast %></td>
-        <td><a href="/reporter/<%= survey.crn %>/show" class="btn btn-danger btn-sm">Complete Evaluation</a></td>
+        <td><a href="/reporter/<%= survey.crn %>/show" class="btn btn-default  btn-block ">Show Report</a></td>
       </tr>
     <% end %>
     <% elsif %>
