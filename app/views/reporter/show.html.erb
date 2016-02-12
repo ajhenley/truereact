@@ -1,0 +1,128 @@
+<a href="/reporter/index" class="btn btn-link"><--Back to List of your Reports</a><br />
+<a href="/reporter/indexall" class="btn btn-link"><--Back to List of all Reports</a>
+
+<table class="table">
+  <tr>
+    <td><h3><%= @survey[0].subj %> <%= @survey[0].crsenum %> <%= @survey[0].sect.to_s.rjust(2,"0") %> <%= @survey[0].coursetitle %> - <%= @survey[0].crn %> (<%= @survey[0].credits %> credits)</h3></td>
+    <td><h3>Fall 2015</h3></td>
+  </tr>
+  <tr>
+    <td><h4><%= @survey[0].instrlast %>, <%= @survey[0].instrfirst %></h4></td>
+    <td><%= @numdone %> evals/<%= @numall %> students</td>
+  </tr>
+</table>
+<hr/>
+<table class="table table-striped">
+  <tr>
+    <th>Question</th>
+    <th>Average</th>
+    <th>Avg by Dept</th>
+    <th>Avg by Instr</th>
+  </tr>
+  <tr>
+    <td><%= @q1.split("~")[1] %></td>
+    <td><%= "%.2f" % @q1avg %></td>
+    <td><%= "%.2f" % @q1deptavg %></td>
+    <td><%= "%.2f" % @q1instavg %></td>
+  </tr>
+  <tr>
+    <td><%= @q2.split("~")[1] %></td>
+    <td><%= "%.2f" % @q2avg %></td>
+    <td><%= "%.2f" % @q2deptavg %></td>
+    <td><%= "%.2f" % @q2instavg %></td>
+  </tr>
+  <tr>
+    <td><%= @q3.split("~")[1] %></td>
+    <td><%= "%.2f" % @q3avg %></td>
+    <td><%= "%.2f" % @q3deptavg %></td>
+    <td><%= "%.2f" % @q3instavg %></td>
+  </tr>
+  <tr>
+    <td><%= @q4.split("~")[1] %></td>
+    <td><%= "%.2f" % @q4avg %></td>
+    <td><%= "%.2f" % @q4deptavg %></td>
+    <td><%= "%.2f" % @q4instavg %></td>
+  </tr>
+  <tr>
+    <td><%= @q5.split("~")[1] %></td>
+    <td><%= "%.2f" % @q5avg %></td>
+    <td><%= "%.2f" % @q5deptavg %></td>
+    <td><%= "%.2f" % @q5instavg %></td>
+  </tr>
+  <tr>
+    <td><%= @q6.split("~")[1] %></td>
+    <td><%= "%.2f" % @q6avg %></td>
+    <td><%= "%.2f" % @q6deptavg %></td>
+    <td><%= "%.2f" % @q6instavg %></td>
+  </tr>
+  <tr>
+    <td><%= @q7.split("~")[1] %></td>
+    <td><%= "%.2f" % @q7avg %></td>
+    <td><%= "%.2f" % @q7deptavg %></td>
+    <td><%= "%.2f" % @q7instavg %></td>
+  </tr>
+  <tr>
+    <td><%= @q8.split("~")[1] %></td>
+    <td><%= "%.2f" % @q8avg %></td>
+    <td><%= "%.2f" % @q8deptavg %></td>
+    <td><%= "%.2f" % @q8instavg %></td>
+  </tr>
+  <tr>
+    <td><%= @q9.split("~")[1] %></td>
+    <td><%= "%.2f" % @q9avg %></td>
+    <td><%= "%.2f" % @q9deptavg %></td>
+    <td><%= "%.2f" % @q9instavg %></td>
+  </tr>
+  <tr>
+    <td><%= @q10.split("~")[1] %></td>
+    <td><%= "%.2f" % @q10avg %></td>
+    <td><%= "%.2f" % @q10deptavg %></td>
+    <td><%= "%.2f" % @q10instavg %></td>
+  </tr>
+</table>
+
+<hr/>
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading"><%= @q11.split("~")[1] %></div>
+
+  <!-- List group -->
+  <ul class="list-group">
+    <% @q11sum.each do |sum| %>
+      <li class="list-group-item"><%= sum %></li>
+    <% end %>
+  </ul>
+</div>
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading"><%= @q12.split("~")[1] %></div>
+
+  <!-- List group -->
+  <ul class="list-group">
+    <% @q12sum.each do |sum| %>
+      <li class="list-group-item"><%= sum %></li>
+    <% end %>
+  </ul>
+</div>
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading"><%= @q13.split("~")[1] %></div>
+
+  <!-- List group -->
+  <ul class="list-group">
+    <% @q13sum.each do |sum| %>
+      <li class="list-group-item"><%= sum %></li>
+    <% end %>
+  </ul>
+</div>
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading"><%= @q14.split("~")[1] %></div>
+
+  <!-- List group -->
+  <ul class="list-group">
+    <% @q14sum.each do |sum| %>
+      <li class="list-group-item"><%= sum %></li>
+    <% end %>
+  </ul>
+</div>

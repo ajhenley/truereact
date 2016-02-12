@@ -30,7 +30,7 @@ class SurveysController < ApplicationController
   def stats
     if current_user.role == "admin"
       @donesurveys = Survey.where(isdone: 1)
-      @totsurveys = Survey
+      @notdone = Survey.where(isdone: 0)
     else
       redirect_to root_path
     end

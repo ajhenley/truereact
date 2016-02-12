@@ -7,6 +7,10 @@ Rails.application.routes.draw do
     end
   end
 
+  get "reporter/index"
+  get "reporter/indexall"
+  get "reporter/:crn/show" => "reporter#show"
+  
   authenticated do
     root :to => 'surveys#index', as: :authenticated
   end
