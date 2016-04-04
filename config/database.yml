@@ -16,7 +16,7 @@ development:
   adapter:  postgresql
   host:     localhost
   encoding: unicode
-  database: truereact_development
+  database: truereact_dev
   pool:     5
   username: truereact
   password:

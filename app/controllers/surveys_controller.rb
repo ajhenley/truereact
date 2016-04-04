@@ -10,7 +10,7 @@ class SurveysController < ApplicationController
   # GET /surveys
   # GET /surveys.json
   def index
-    @surveys = Survey.where(studentid: current_user.id, isdone: 2 )
+    @surveys = Survey.where(studentid: current_user.id, isdone: 0 )
   end
 
   # GET /surveys/1
@@ -20,7 +20,7 @@ class SurveysController < ApplicationController
 
   # GET /surveys/new
   def new
-    @survey = Survey.new
+    @survey = Survey.newdbconsole
   end
 
   # GET /surveys/1/edit
