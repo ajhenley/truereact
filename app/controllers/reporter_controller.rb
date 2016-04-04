@@ -3,22 +3,22 @@ class ReporterController < ApplicationController
   before_action :set_report, only: [:show]
   
   def index
-    @surveys = Survey.select(:subj, :crsenum, :sect, :coursetitle, :instrfirst, :instrlast, :crn, :credits).where(instrid: current_user.id, isdone: 1 ).distinct
+    @surveys = Survey.select(:subj, :crsenum, :sect, :coursetitle, :instrfirst, :instrlast, :crn, :credits).where(instrid: current_user.id, isdone: 3 ).distinct
   end
   
   def indexall
-    @surveys = Survey.select(:subj, :crsenum, :sect, :coursetitle, :instrfirst, :instrlast, :crn, :credits).where(isdone: 1 ).order(:subj, :crsenum, :sect).distinct
+    @surveys = Survey.select(:subj, :crsenum, :sect, :coursetitle, :instrfirst, :instrlast, :crn, :credits).where(isdone: 3 ).order(:subj, :crsenum, :sect).distinct
   end
   
   # GET /show/1
   # GET /show/1.json
   def show
-    @donesurveys = Survey.where(crn: params[:crn], isdone: 1)
-    @donedeptsurveys = Survey.where(subj: @survey[0].subj, isdone: 1)
-    @doneinstrsurveys = Survey.where(instrid: @survey[0].instrid, isdone: 1)
-    @numdone = Survey.where(crn: params[:crn], isdone: 1).count
-    @numdeptdone = Survey.where(subj: @survey[0].subj, isdone: 1).count
-    @numinstrsurveys = Survey.where(instrid: @survey[0].instrid, isdone: 1).count
+    @donesurveys = Survey.where(crn: params[:crn], isdone: 3)
+    @donedeptsurveys = Survey.where(subj: @survey[0].subj, isdone: 3)
+    @doneinstrsurveys = Survey.where(instrid: @survey[0].instrid, isdone: 3)
+    @numdone = Survey.where(crn: params[:crn], isdone: 3).count
+    @numdeptdone = Survey.where(subj: @survey[0].subj, isdone: 3).count
+    @numinstrsurveys = Survey.where(instrid: @survey[0].instrid, isdone: 3).count
     @numall = Survey.where(crn: params[:crn]).count
     @q1 = @survey[0].q1
     @q2 = @survey[0].q2
