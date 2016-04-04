@@ -3,7 +3,9 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= current_user.lname %>, <%= current_user.fname %> <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="/">Evalutions</a></li>
+            <% if current_user.role == "faculty" || current_user.role == "chair" %>
             <li><a href="/reporter/index">My Reports</a></li>
+            <% end %>
             <li><a href="/reporter/indexall">All Reports</a></li>
             <li role="separator" class="divider"></li>
             <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
