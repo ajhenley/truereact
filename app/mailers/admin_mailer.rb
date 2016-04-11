@@ -5,6 +5,6 @@ class AdminMailer < ApplicationMailer
   
   def more_surveys(user)
     @user = user
-    mail(to: @user.email, subject: "Fall 2015 Course Evaluations for #{@user.email}")
+    mail(to: @user.email, subject: "Spring 2016 Course Evaluations for #{@user.email}")
   end
 end
